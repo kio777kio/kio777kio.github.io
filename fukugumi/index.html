@@ -1,0 +1,378 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8"> <!--This utf-8 defines a character set and should be coded for every website.  -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="FukuGumi is a leading provider of broad-spectrum CBD supplements in Japan, dedicated to bringing the safest and best CBD experience to customers">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Quicksand:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://file.myfontastic.com/6xJgTvXTAaNVi4T8rWnQ2k/icons.css" rel="stylesheet">
+
+    <title>FukuGumi</title>
+
+<!--  The below 8-9 lines of code are the code for the fukugumi FAVICON (gold), made on realfavicongenerator.net 
+IMPORTANT:  the setting of the file path before generating the HTML on the website was key.  Remember that these serve as links to the image files that are created by favicongenerator, so the path must be precise.  Here, the favicon folder holds all of the specific image files.  
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="manifest" href="/resources/favicon/site.webmanifest">
+<link rel="mask-icon" href="/resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <header class="js-header">
+        <nav>
+            <div class="row all-nav">
+                <img src="resources/css/images/fukuGumiLogoAqua2.png" alt="logo" class="logo">
+                <img src="resources/css/images/fukugumiGold.png" alt="logo-gold" class="logo-gold">
+                <ul class="main-nav js-main-nav">
+                    <li><a href="#cbdProducts">福グミ</a></li>
+                    <li><a href="#cbdProducts">CBDオイル</a></li>
+                    <li><a href="#intro">CBDを学ぶ</a></li>
+                    <li><a href="#form">Feedback</a></li>
+                </ul>
+                <a class="mobile-nav-icon js-nav-icon"><i class="icon-navicon-round"></i></a>
+            </div>
+        </nav>
+
+        <div class="main-aloha">
+            <h1>Aloha </h1>
+            <h3>CBD幸福感サプリは福グミ</h3>
+        </div>
+
+        <div class="row buttons-buy-learn">
+            <a class="btn full-btn js-scroll-to-products" href="#">Browse &amp; Buy</a>
+            <a class="btn ghost-btn js-scroll-to-info-columns" href="#">Learn More</a>
+        </div>
+
+    </header>
+
+    <!--  The INTRO SECTION :
+This section has links at the top of the 4 basic-info columns, which will eventually link to the specific info regarding each category (Inflammation, Sleep, Stress, Recovery).  -->
+
+
+    <section class="intro-section js-intro-section" id="intro"> <!-- this js-intro-section gets referenced in script.js to enable the stickyNav to appear and stick here-->
+        <div class="row intro-text">
+            <h2>Welcome to FukuGumi</h2>
+            <p class="long-copy">
+                この度は福組オフィシャルサイトへのご訪問、誠にありがとうございます。
+                福組<span>&#174;</span>では、高品質で安心安全なCBD製品をお求めやすい価格で提供することが
+                使命です。ウェルネス効果満載のCBDで、皆さまの幸福感をサポートします。
+            </p>
+        </div>
+
+        <div class="row info-columns-box js-info-columns js-wp-1">
+            <!--wp-1 notes:  general notes on animating with animate
+            1.  include link to animate.css file in the head section
+            2.  designate the waypoint like here "js-wp-1"
+            3.  in CSS, make opacity:0; for .js-wp-1
+            4.  under (2), make opacity:1; for .js-wp-1.animate__animated
+
+            -->
+
+            <div class="col span-1-of-3 info-column">
+                <a href="#"> <i class="icon-iconfinder-emoji-emoticon-14-3638447 big-icon"></i>睡眠</a>
+                <p>習慣的な睡眠不足はガンや脳梗塞、糖尿病や慢性肥満へのリスクも高めます。バランスが取れているECSはストレスや不安にも耐性があり、安定した睡眠習慣を生理的に調整します。旅行時の時差ボケ対策にも有効です。
+                </p>
+            </div>
+
+            <div class="col span-1-of-3 info-column">
+                <a href="#"><i class="icon-iconfinder-meditation-4042272 big-icon"></i>幸福感</a>
+                <p>CBDは神経伝達物質放出のモジュレーターであり、不安感やストレスの解消にも有効。自然な幸福感サプリとして世界中のセレブがCBD愛用者になっているのも納得！</p>
+            </div>
+
+            <div class="col span-1-of-3 info-column">
+                <a href="#"><i class="icon-iconfinder-06-immune-5980403 big-icon"></i>リカバリー</a>
+                <p>適度な運動に筋肉痛はつきものですが、この痛みが運動を習慣づける妨げにも。CBDは抗炎症効果によって筋肉痛も和らげるので、運動後の回復にも有効。一流アスリートも欠かせないリカバリーツールとして使用されています
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cbd-basic-info js-basic-info" id="basic-info">
+        <div class="row cbd-basics">
+            <h2>CBD（カンナビジオール)の基本情報</h2>
+            <img src="resources/css/images/cbdFormulaTranslucent.png" alt="cbd-formula">
+            <p>
+                カンナビジオール（Cannabidiol）略称CBDは、麻に（薬用の大麻以外にも）含まれる、110種類以上あるカンナビノイドのひとつ。主なフィトカンナビノイドで、麻の抽出物の計40%までの割合を占める。多くの試験から良好な安全性の特徴が証明されていて、アメリカでは難治てんかん疾患の医薬品としてFDA承認もされている。
+                テトラヒドロカンナビノール (∆9-THC） のような典型的な精神乱作用効果はなく、乱用、依存、耐性もみられない。CBD疼痛管理、炎症抑制、精神安定や睡眠促進など、様々な医療応用の可能性があると期待される。
+            </p>
+        </div>
+
+
+        <table class="med-table js-wp-2">
+            <tr>
+                <th class="table-header" colspan="2">
+                    CBDで注目の研究分野、期待される医療作用
+                </th>
+            </tr>
+
+            <tr>
+                <th class="table-header">疾患エリア</th>
+                <th class="table-header">医療作用、研究に期待</th>
+            </tr>
+            <tr>
+                <td class="therapy-area">心療治療分野</td>
+                <td>社会不安やストレスの減少；筋緊張、不穏状態、疲労、集中困難の減少や社交性の向上は動物モデルで証明。うつ病の齧歯類モデルでは抗うつ作用も認識
+                として研究に注目</td>
+            </tr>
+            
+            <tr>
+                <td class="therapy-area">がん</td>
+                <td>悪性・良性腫瘍における抗増殖機能や抗浸潤活性作用。内在性カンナビノイド経路は免疫作用にも関与していることから、抗癌免疫への効果も期待</td>
+            </tr>
+
+            <tr>
+                <td class="therapy-area">中枢神経疾患</td>
+                <td><span>難治てんかん</span>：CBD医薬品のエピディオレックスはドラべ症候群およびレノックス・ガストー症候群への効能で正式に医薬品承認を米FDAから取得。他の難治性てんかんでも効果が研究中。
+                    <span>アルツハイマー病</span>：　アミロイドβ淡白による炎症や神経変性反応を抑制。
+                    <span>パーキンソン病</span>：　ヒトにおける悪夢と攻撃的行動の減少、in vivo試験ではドーパミン作動性損傷の減衰が検証。
+                </td>
+            </tr>
+            <tr>
+                <td class="therapy-area">疼痛、炎症疾患</td>
+                <td>他の治療法に効果がみられない(薬剤抵抗性のある)神経因性疼痛を患う患者における鎮痛作用。TNF-α分泌を抑制することで抗炎症効果、鎮痛効果があると考えられる。関節リウマチやクローン病など、自己免疫疾患に伴う疼痛に有効と研究が進んでいる。
+                </td>
+            </tr>
+            
+                
+           
+        </table>
+    </section>
+
+    <section class="cbd-products js-cbd-products" id="cbdProducts">
+        <h2>FukuGumi Products</h2>
+        <div class="all-products-container">
+                       
+            <a href="#">
+                <figure class="cbdgummies js-wp-3">
+                    <div class="cbdgummies__photo">
+                        <img src="resources/css/images/heartgummies.jpeg" alt="cbdgummies" class="cbdgummies__img">
+                    </div>
+                    <div class="cbdgummies__content">
+                        <div class="cbdgummies__title">
+                            <h2 class="cbdgummies__heading">CBD Gummies 30mg<span></span>/piece</h2>
+                            <div class="cbdgummies__tag cbdoil__tag--1">#natural</div>
+                            <div class="cbdgummies__tag cbdoil__tag--2">#fullyTested</div>
+                        </div>
+                        <p class="cbdgummies__description">Our signature broad-spectrum CBD oil specially formulated to
+                            guide better sleep </p>
+                        <div class="cbdgummies__details">
+                            <p class="cbdgummies__detail"><span>🍊</span>Orange</p>
+                            <p class="cbdgummies__detail"><span>🍇</span>Grape</p>
+                            <p class="cbdgummies__detail"><span>🍑</span>Peach</p>
+                        </div>
+                    </div>
+                    <div class="cbdgummies__price">coming soon</div>
+                </figure>
+            </a>
+
+            <a href="#">
+                <figure class="cbdoil">
+                    <div class="cbdoil__photo">
+                        <img src="https://images.unsplash.com/photo-1550160771-4fff64071033?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGRyb3BwZXIlMjBib3R0bGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=800&q=60"
+                        alt="cbdoil" class="cbdoil__img"></div>
+                        
+                        <div class="cbdoil__content">
+                            <div class="cbdoil__title">
+                                <h2 class="cbdoil__heading">CBD oil 20mg<span>/drop</span></h2>
+                            <div class="cbdoil__tag cbdoil__tag--1">#natural</div>
+                            <div class="cbdoil__tag cbdoil__tag--2">#fullyTested</div>
+                        </div>
+                        <p class="cbdoil__description">Our signature broad-spectrum CBD oil specially formulated to guide better sleep </p>
+                        <div class="cbdoil__details">
+                            <p class="cbdoil__detail"><span>🌴</span>100% Natural </p>
+                            <p class="cbdoil__detail"><span>🌈</span>Broad-Spectrum</p>
+                            <p class="cbdoil__detail"><span>🚫</span>0% THC </p>
+                        </div>
+                    </div>
+                    <div class="cbdoil__price">¥3300</div>
+                </figure>
+            </a>
+
+
+            <a href="#">
+                <figure class="cbdrecovery js-wp-4">
+                    <div class="cbdrecovery__photo">
+                        <img src="resources/css/images/yogaMountains.jpg" alt="cbdrecovery" class="cbdrecovery__img">
+                    </div>
+
+
+                    <div class="cbdrecovery__content">
+                        <div class="cbdrecovery__title">
+                            <h2 class="cbdrecovery__heading">CBD Recovery Formula<span>/piece</span></h2>
+                            <div class="cbdrecovery__tag cbdoil__tag--1">#activeLife</div>
+                            <div class="cbdrecovery__tag cbdoil__tag--2">#peakPerformance</div>
+                        </div>
+
+                        <p class="cbdrecovery__description">Broad-spectrum CBD formula designed specifically to support
+                            peak physical activity</p>
+                        <div class="cbdrecovery__details">
+                            <p class="cbdrecovery__detail"><span>🧊</span>Anti- inflammation</p>
+                            <p class="cbdrecovery__detail"><span>🏃🏽‍♂️</span>Recover Faster</p>
+                            <p class="cbdrecovery__detail"><span>🌴</span>All Natural</p>
+                        </div>
+                    </div>
+                    <div class="cbdrecovery__price">coming soon</div>
+                </figure>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-customers">
+        <div class="row all-customers">
+            <h2 class="js-wp-5">お客様のからも好評！<br>
+                毎度ありがとうございます！</h2>
+            
+            <div class="row three-customers">
+                
+                <div class="col span-1-of-3 customer">
+                    <blockquote>
+                        小さい子供の世話、終わらない家事をこなすのは大変。でもカンナ組のオイルを使い始めて、もうやめられません！今はいくら忙しくても穏やかな時間が実現できます。カンナ組ありがとうございます！
+                        <cite> <img src="resources/css/images/customer1.jpg" alt="customer1"> NSさん　29歳</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="col span-1-of-3 customer">
+                    <blockquote>
+                        仕事で最近海外出張が急増して、長年の願いが叶った気持ちでしたが、毎回襲いかかる時差ボケには辟易していました。そこで試してみたのがカンナ組のグミ。時差ボケ対策としては優れもの！今後、どんな旅行にも必須形態品です。
+                        <cite> <img src="resources/css/images/Customer2.jpg" alt="customer2"> KHさん　34歳</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="col span-1-of-3 customer">
+                    <blockquote>
+                        いつも楽しく仕事したいのですが、私の上司は若干不安定。それが原因でムシャクシャする日々が。コロナで夫が常時在宅勤務となっているのも不満のたね。そんな時、cbdオイルを数的「ポタ」。十分後には静寂的な精神を維持できています。今後死ぬまで、カンナ組さんよろしく！
+                        <cite> <img src="resources/css/images/Customer3.jpg" alt="customer3"> TSさん　42歳</cite>
+                    </blockquote>
+                </div>
+            </div>              
+        </div>
+    </section>
+
+    <section class="info-form" id="form">
+        <div class="row form-title">
+            <h2>Please give us feedback</h2>
+            <h4>もっといい会社になるために皆様の声をお聞かせください</h4>
+        </div>
+
+    <div class="row big-box-form"> <!-- action sends to a URL. method specifies http data to use when sending form data.  -->
+        <form action="#" method="post" class="full-form">
+        <div class="row form-item">
+            <div class="col span-1-of-3 form-left-side">
+                <label>Name</label>
+            </div>
+            <div class="col span-2-of-3 form-right-side">
+                <input id="name" class="name" type="text" placeholder="Your Name" required>
+            </div>    
+        </div>
+        <div class="row form-item">
+            <div class="col span-1-of-3 form-left-side">
+                <label>email</label>
+            </div>
+            <div class="col span-2-of-3 form-right-side">
+                <input id="email" class="email" type="text" placeholder="Your email" required>
+            </div>    
+        </div>
+        <div class="row form-item">
+            <div class="col span-1-of-3 form-left-side">
+                <label>福グミのことはどこで？</label>
+            </div>
+            <div class="col span-2-of-3 form-right-side">
+                <select name="find-us" id="find-us">
+                    <option value="friends">友人からの紹介</option>
+                    <option value="websearch">ウェブサーチ</option>
+                    <option value="advertisements">広告</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+        </div>
+            <div class="row form-item">
+                    <div class="col span-1-of-3 form-left-side">
+                        <label>福グミニュースレター</label>
+                    </div>
+                    <div class="col span-2-of-3 form-right-side">
+                        <input type="checkbox" name="newsletter" checked> はい、読みたいです
+                    </div>
+            </div>
+            <div class="row form-item">
+                    <div class="col span-1-of-3 form-left-side">
+                        <label>コメントをぜひ！</label>
+                    </div>
+                    <div class="col span-2-of-3 form-right-side">
+                        <textarea name="comment" placeholder="freetext"> </textarea>
+                    </div>
+            </div>
+            <div class="row form-item form-left-side">
+                    <div class="col span-1-of-3 form-left-side">
+                        <label>&nbsp;</label> <!--this codes for a blank space on the left side of the form-->
+                    </div>
+                    <div class="col span-2-of-3 form-right-side">
+                        <input class="submit" type="submit" value="Send It">
+                    </div>
+            </div>
+            </form>
+    </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-links-social">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">CBD Newsletter</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row copyright-statement">
+            <h2>FukuGumi<span>&copy;</span>  Copyright 2020 </h2>
+        </div>
+        <!--
+            icons:
+            class="icon-facebook"
+            class="icon-google-plus"
+            class="icon-linkedin"
+        class="icon-instagram"
+        -->
+    </footer>
+
+    <!-- Script codes "should always go at the end, after all other site components have already loaded..."  This below links to the scripts.js file in the js folder -->
+    <!-- the below is taken from the google hosted libraries, this is snippet1.x.  I assume this gives 
+        JQuery capability somehow-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- These SCRIPTS Below are to adjust this page's code for multiple types of browsers, particularly for older browsers -->
+        <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+<!-- The below is from lesson 63 of web course, and this .js file was downloaded from imakewebthings.com.  Download and extract min.js file from lib folder, then include here above script.js-->
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <!-- IMPORTANT - The script.js (below) must be included AFTER the jquery scripts.  I was trying to solve this for several frustrating hours -->
+        <script src="resources/js/script.js"></script>     
+    </body>
+</html>

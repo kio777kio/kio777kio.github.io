@@ -1,0 +1,1074 @@
+/*  COLOR THEME HERE ============================
+=======================================
+
+Dark sea green: #015051
+Lighter sea green: #04837b
+blue-green: #04837b
+light aquamarine: #04f2d5
+
+pink:#fb8eff
+yellow:rgb(255, 241, 165)
+
+=================
+日本語フォント：100, 300, 400, 500, 700
+font-family: 'M PLUS Rounded 1c', sans-serif;
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+Aloha Font: one weight
+font-family: 'Lily Script One', cursive;
+-=======================================
+
+English font: Quicksand weight 300 400 600
+font-family: 'Quicksand', sans-serif;
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width:100vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #015051;
+    overflow-x: hidden;
+}
+
+/*  Background Images============================
+=======================================*/
+
+header {
+    background-image: url(images/hawaiipalm.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    height: 800px;
+    width: 100%;
+
+}
+
+body {
+    background-image: url(images/watersand2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/*===========================================*/
+
+/* ROW ============================
+=========================================*/
+
+.row {
+    width:100%;
+}
+
+
+
+/*NAV Bar============================
+=======================================*/
+
+.all-nav {
+    background:linear-gradient(rgba(0, 0, 0, 0.625),rgba(0, 0, 0, 0.584));
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-attachment: fixed;
+}
+
+.all-nav img {
+    height: 150px;
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+}
+
+.all-nav ul {
+    width: 85%;
+    font-size: 100%;
+    font-weight:500;
+    list-style: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 33px 20px 33px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #04f2d5;
+    transition: text-shadow 0.2s, border-bottom 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    text-shadow: 1px 1px rgb(255, 241, 165);
+    border-bottom: solid 2px rgb(255, 241, 165);
+}
+
+/*  STICKY NAV Starts here lesson 62 of Jonas HTML course */
+
+.sticky {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    box-shadow: 0 2px 5px rgba(191, 191, 191, 0.892);
+    z-index:10;
+}
+.sticky .all-nav {
+    background:linear-gradient(#fff,#fff);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-attachment: fixed;
+}
+
+.sticky .main-nav a:link,
+.sticky .main-nav a:visited {
+    text-decoration: none;
+    color: #015051;
+
+}
+/*  Explaining the below:  "if the .logo is inside the sticky navigation, then display none.  If .logo-black is within the sticky nav, then dsplay as block. */
+.sticky .logo {
+    display:none;
+}
+
+.sticky .logo-gold {
+    display:block;
+    height:80px;
+    width:auto;
+    margin-left:30px;
+}
+
+/*======================================
+MOBILE NAV================================*/
+
+.mobile-nav-icon {
+    float:right;
+    margin-top:13px;
+    margin-right:20px;
+    cursor:pointer;
+    display:none;
+
+}
+
+.mobile-nav-icon i {
+    font-size:200%;
+    color:#27ae9e;
+}
+
+/*====LOGO styling===========*/
+.logo {
+    height:120px;
+    width:auto;
+}
+.logo-gold {
+    display:none;
+    height:120px;
+    width:auto;
+}
+/*HEADER============================
+=======================================*/
+
+.main-aloha h1 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 600%;
+    color: #015051;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-shadow: 3px 2px 2px rgb(255, 241, 165);
+}
+
+.main-aloha h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    font-size: 150%;
+    color: #015051;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(255, 241, 165);
+}
+
+/*  BUTTONS on landing page===============================
+*/
+
+.buttons-buy-learn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 600px;
+    margin: auto;
+
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.full-btn:link,
+.full-btn:visited {
+    background-color: rgba(1, 78, 81, 0.72);
+    color: rgb(255, 241, 165);
+    -webkit-transition: color 0.2s, background 0.2s;
+    transition: color 0.2s, background 0.2s;
+}
+
+.full-btn:hover,
+.full-btn:active {
+    background-color: rgb(255, 241, 165);
+    color: #015051;
+}
+
+.ghost-btn:link,
+.ghost-btn:visited {
+    color: #015051;
+    -webkit-transition: color 0.2s, background 0.2s;
+    transition: color 0.2s, background 0.2s;
+    border: 1px solid rgb(255, 241, 165);
+}
+
+.ghost-btn:hover,
+.ghost-btn:active {
+    color: rgb(255, 241, 165);
+    background-color: rgba(1, 80, 81, 0.49);
+}
+
+
+
+/*INTRO SECTION with columns on pain/inflamm, sleep, anxiety, sports recovery===============================================
+==================
+icons:
+pain/inflam:
+Sports recovery: class="icon-iconfinder-06-immune-5980403"
+幸福感: class="icon-iconfinder-meditation-4042272-1"
+sleep: class="icon-iconfinder-emoji-emoticon-14-3638447-2"
+class="icon-iconfinder-emoji-emoticon-14-3638447-3"
+*/
+
+.intro-text {
+    margin: auto;
+    width: 90%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+}
+
+.intro-text h2 {
+    width: 50%;
+    margin-top: 55px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #015051;
+    text-shadow: 2px 1px rgb(255, 241, 165);
+}
+
+.intro-text p {
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 300;
+    font-size: 80%;
+    line-height: 1.4;
+    word-spacing: 1px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+
+.info-columns-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+.info-column {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 200;
+    vertical-align: top;
+    padding-right: 1%;
+    margin: 20px 5px 30px 0;
+}
+
+.info-column i {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.info-column a {
+    text-decoration: none;
+    font-weight: 400;
+    margin-bottom:15px;
+    line-height:2.0;
+    position:relative;
+    left:45px;
+}
+
+.info-column a:link,
+.info-column a:visited {
+    text-decoration: none;
+    font-size: 110%;
+    color: #015051;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    transition: text-shadow 0.2s;
+    -webkit-transition: text-shadow 0.2s;
+    -moz-transition: text-shadow 0.2s;
+    -ms-transition: text-shadow 0.2s;
+    -o-transition: text-shadow 0.2s;
+}
+
+.info-column a:hover,
+.info-column a:active {
+    text-shadow: 1px 1px gold;
+}
+
+.big-icon {
+    float: left;
+
+}
+
+.info-column p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 70%;
+    font-weight: 300;
+    line-height: 1.4
+}
+
+/*=========Animated Scroll for .js--wp-1  ==========
+===========when the scroll goes past .js--wp-1, then the transparent should convert to visible.*/
+
+.js-wp-1 {
+    opacity:0;
+}
+
+.js-wp-1.animate__animated {
+    opacity:1;
+}
+
+/*================= END INTRO STYLE SECTION ======================
+=============================
+
+BEGIN BASIC BCD INFO SECTION ======================================
+============================================
+*/
+.cbd-basic-info {
+    background:linear-gradient(rgba(248, 248, 246, 0.653),rgba(255, 255, 255, 0.44));
+    font-family:'M PLUS Rounded 1c', sans-serif;
+    padding-bottom: 30px;
+}
+
+.cbd-basics img {
+    height: 180px;
+    width: 200px;
+    margin-top: 5px;
+    margin-left:65px;
+    margin-right:15px;
+    float: left;
+}
+
+.cbd-basics h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 30px 15% 30px 15%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 2px 1px rgb(255, 241, 165);
+    width: 70%;
+    border-bottom: 2px solid #015051;
+}
+
+.cbd-basics p {
+    padding:5px;
+    width:85%;
+    margin-left:5%;
+    font-size:90%;
+    line-height:1.8;;
+
+}
+
+/* END CBD BASICs, begin TABLE OF MEDICINAL QUALITIES ======
+====================================================*/
+
+
+.med-table {
+    margin: 45px 5%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+    line-height: 1.3;
+    border: 1px solid #01505130;
+}
+
+/*waypoint-2 (js--wp-2) for scrolling animation#2 (flipInX)*/
+.js-wp-2 {
+    opacity:0;
+}
+
+.js-wp-2.animate__animated {
+    opacity:1;
+}
+
+
+.med-table TD {
+    padding: 1%;
+}
+
+.table-header {
+    background-color: rgba(4, 242, 213, 0.13);
+    padding: 5%;
+    font-size: 110%;
+}
+
+.therapy-area {
+    width: 33%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(4, 242, 213, 0.13);
+}
+
+/*  START SECTION ON PRODUCTS, the product blocks were made from a flexbox exercise on codepen. */
+.cbd-products h2 {
+    width:45%;
+    margin-left:25%;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:35px;
+    padding-bottom: 20px;
+    text-shadow: 2px 1px rgb(255, 241, 165);
+    border-bottom: 1px solid #015051;
+}
+
+.all-products-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.all-products-container a:link,
+.all-products-container a:visited {
+    text-decoration: none;
+    color: #015051;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.all-products-container a:hover,
+.all-products-container a:active {
+        transform:scale(1.05);
+        opacity:1;
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        -ms-transform:scale(1.05);
+        -o-transform:scale(1.05);
+}
+
+.cbdoil {
+    width:700px;
+    height:200px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 100px 30px rgba(0, 0, 0, 0.3);
+    /* box-shsadow: offset-x, offset-y, blur-radius, spread-radius and color. */
+    overflow: hidden;
+    display: flex;
+    text-decoration:none;
+}
+
+.cbdoil__photo {
+    flex: 0 0 35%;
+    /* flex: flex-grow, flex-shrink, and flex-basis.  Default is 0 1 auto.  */
+}
+
+.cbdoil__img {
+    width: 100%;
+    /* This is 100% of the above 45%; given to the div cbdoil__photo*/
+    display: block;
+    height: 110%;
+}
+
+.cbdoil__content {
+    flex: 1;
+    background-color: rgb(240, 248, 255);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.cbdoil__title {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top:10px;
+}
+
+.cbdoil__title h2 {
+    text-decoration: none;
+    text-shadow:none;
+    font-size: 90%;
+    margin:0;
+    border:none;
+    padding-left:5px;
+}
+
+.cbdoil__tag {
+    font-size:50%;
+    padding:5px;
+    border-radius:7px;
+    margin-left:15px;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+.cbdoil__tag--1 {
+    background-color: #015051;
+    color: aliceblue;
+}
+
+.cbdoil__tag--2 {
+    background-color: #04f2d5;
+    color: #015051;
+}
+
+.cbdoil__price {
+    display: flex;
+    font-size: 100%;
+    font-weight: 500;
+    flex: 0 0 10%;
+    background: linear-gradient(#04f2d5, #fff, #04f2d5);
+    writing-mode: vertical-rl;
+    /* this is a cool one, useful for JP */
+    justify-content: center;
+    align-items: center;
+    /*  align and justify require that the same block be defined as a flexbox */
+}
+
+.cbdoil__description {
+    font-size: 65%;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.cbdoil__description p {
+    margin:0;
+}
+
+.cbdoil__details {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.cbdoil__detail {
+    font-size: 55%;
+    text-transform: uppercase;
+}
+
+/*  ==================================================
+===============start CBD Gummies block (part 2 of products section)  
+===========================================================*/
+
+
+.cbdgummies {
+    margin-top:20px;
+    margin-bottom:30px;
+    max-width:700px;
+    max-height:200px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 100px 30px rgba(0, 0, 0, 0.3);
+    /* box-shsadow: offset-x, offset-y, blur-radius, spread-radius and color. */
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.cbdgummies__photo {
+    flex: 0 0 35%;
+    /* flex: flex-grow, flex-shrink, and flex-basis.  Default is 0 1 auto.  */
+}
+
+.cbdgummies__img {
+    width: 100%;
+    /* This is 100% of the above 45%; given to the div cbdoil__photo*/
+    display: block;
+    height: 110%;
+}
+
+.cbdgummies__content {
+    flex: 1;
+    background-color: rgb(240, 248, 255);
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 20px;
+}
+
+.cbdgummies__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cbdgummies__title h2 {
+    font-size: 90%;
+    margin:10px 10px 0 10px;
+    border:none;
+    text-shadow:none;
+}
+
+.cbdgummies__title span {
+    font-size:60%;
+}
+
+.cbdgummies__tag {
+    font-size: 50%;
+    padding: 5px;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-top: -30px;
+}
+
+.cbdgummies__tag--1 {
+    background-color: #015051;
+    color: aliceblue;
+}
+
+.cbdgummies__tag--2 {
+    background-color: #04f2d5;
+    color: #015051;
+}
+
+
+
+.cbdgummies__description {
+    font-size:65%;
+    text-align:left;
+    margin-left: 15px;
+
+}
+
+.cbdgummies__decription p {
+    font-size:80%;
+    margin:0;
+}
+
+.cbdgummies__details {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:35px;
+
+}
+
+.cbdgummies__detail {
+    font-size: 55%;
+    text-transform: uppercase;
+}
+
+.cbdgummies__price {
+    display: flex;
+    font-size: 100%;
+    font-weight: 500;
+    flex: 0 0 10%;
+    background: linear-gradient(#04f2d5, #fff, #04f2d5);
+    writing-mode: vertical-rl;
+    /* this is a cool one, useful for JP */
+    justify-content: center;
+    align-items: center;
+    /*  align and justify require that the same block be defined as a flexbox */
+}
+
+
+/*=============================================
+========3rd product block for "recovery," whatever that is...===================================
+==================================================*/
+
+.cbdrecovery {
+    margin-top:50px;
+    margin-bottom: 50px;
+    max-width: 700px;
+    max-height:200px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 100px 30px rgba(0, 0, 0, 0.3);
+    /* box-shsadow: offset-x, offset-y, blur-radius, spread-radius and color. */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cbdrecovery__photo {
+    flex: 0 0 35%;
+    /* flex: flex-grow, flex-shrink, and flex-basis.  Default is 0 1 auto.  */
+}
+
+.cbdrecovery__img {
+    width: 100%;
+    /* This is 100% of the above 45%; given to the div cbdoil__photo*/
+    display: block;
+    height: 110%;
+}
+
+.cbdrecovery__content {
+    flex: 1;
+    background-color: rgb(240, 248, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cbdrecovery__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cbdrecovery__title h1 {
+    font-size: 90%;
+}
+
+.cbdrecovery__tag {
+    font-size: 50%;
+    padding: 5px;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+.cbdrecovery__tag--1 {
+    background-color: #015051;
+    color: aliceblue;
+}
+
+.cbdrecovery__tag--2 {
+    background-color: #04f2d5;
+    color: #015051;
+}
+
+.cbdrecovery__description {
+    padding-bottom: 20px;
+    font-size: 65%;
+    text-align: left;
+    margin-left: 15px;
+    /*  align and justify require that the same block be defined as a flexbox */
+}
+.cbdrecovery__description p {
+    font-size: 80%;
+    margin:0;
+}
+
+.cbdrecovery__details {
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cbdrecovery__detail {
+    flex: 0 1 30%;
+    font-size: 55%;
+    text-transform: uppercase;
+}
+
+.cbdrecovery__price {
+    display: flex;
+    font-size: 100%;
+    font-weight: 500;
+    flex: 0 0 10%;
+    background: linear-gradient(#04f2d5, #fff, #04f2d5);
+    writing-mode: vertical-rl;
+    /* this is a cool one, useful for JP */
+    justify-content: center;
+    align-items: center;
+}
+    /*  align and justify require that the same block be defined as a flexbox */
+    /* =================================
+Customers Section
+======================================*/
+
+.section-customers {
+    width: 100%;
+    color:rgb(255, 241, 165);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.all-customers  {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(images/customerbackground.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.all-customers h2 {
+    width:70%;
+    padding-top:30px;
+    margin-left:15%;
+    font-size:120%;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+
+.three-customers {
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+cite img {
+    border-radius: 50%;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+/* This blockquote:before code block (below) encodes the quotation marks above the customer testimonials.  Not sure what the equivalent in Japanese is... maybe an icon? */
+
+blockquote:before {
+    content:"\201C";
+    font-size: 250%;
+    display: block;
+    margin-bottom: -20px;
+}
+
+blockquote {
+    margin: 1%;
+    padding: 1%;
+    font-style: italic;
+    font-size: 90%;
+    line-height: 1.3;
+}
+
+/* ===================================
+FORM SECTION STARTS HERE ========================================
+========================================*/
+
+.form-title h2, h4 {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.form-title h2{ 
+    font-size:120%;
+    margin-top:80px;
+    margin-bottom: 10px;
+    text-shadow:1px 1px rgb(255, 241, 165);
+}
+.big-box-form {
+    width:90vw;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.form-title h4{
+    font-size:80%;
+    font-weight:300;
+}
+
+.form-item {
+    width:80vw;
+    margin: 15px auto;
+    text-align:right;
+}
+
+.form-right-side {
+    text-align:left;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    font-size:100%;
+    width:400px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+input[type=textarea]{
+    height:100px;
+}
+
+input[type=checkbox] {
+    height:20px;
+    width:20px;
+}
+
+.submit {
+    height: 80px;
+    width: 180px;
+    font-size:120%;
+    background-color:aliceblue;
+    color:#015051;
+    border:none;
+    box-shadow:2px 2px 5px 2px #015051;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    transition:color 0.2s, background-color 0.2s;
+    -moz-transition:color 0.2s, background-color 0.2s;
+    -ms-transition:color 0.2s, background-color 0.2s;
+    -o-transition:color 0.2s, background-color 0.2s;
+    -webkit-transition:color 0.2s, background-color 0.2s;
+}
+
+.submit:hover,
+.submit:active {
+    background-color:#0150518e;
+    color:aliceblue;
+}
+
+/*=============================
+FOOTER STYLING STARTS HERE==============================
+===============================================*/
+footer {
+    width:100vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.653));
+    font-family:'M PLUS Rounded 1c', sans-serif;
+}
+
+.footer-links-social {
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+}
+.footer-links {
+    justify-content: space-around;
+}
+.footer-links ul{
+    display:flex;
+    flex-direction: row;
+}
+
+.footer-links li{
+    list-style:none;
+}
+
+.footer-links a:link,
+.footer-links a:visited{
+    text-decoration:none;
+    color:#687674;
+    font-size:80%;
+    margin-right:20px;
+    transition:color 0.2s, border 0.2s;
+    -webkit-transition:color 0.2s, border 0.2s;
+    -moz-transition:color 0.2s, border 0.2s;
+    -ms-transition:color 0.2s, border 0.2s;
+    -o-transition:color 0.2s, border 0.2s;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+    border-bottom:2px solid #04f2d5;
+    color:#04f2d5;
+}
+
+.footer-social ul{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    list-style:none;
+    text-decoration:none;
+}
+
+.footer-social li a{
+    text-decoration:none;
+    font-size:120%;
+    color:#687674;
+    margin-left:25px;
+}
+.icon-facebook,
+.icon-google-plus,
+.icon-linkedin,
+.icon-instagram {
+    transition:color 0.2s;
+    -webkit-transition:color 0.2s;
+    -moz-transition:color 0.2s;
+    -ms-transition:color 0.2s;
+    -o-transition:color 0.2s;
+}
+
+.icon-facebook:hover{
+    color:blue;
+}
+
+.icon-google-plus:hover{
+    color:red;
+}
+
+.icon-linkedin:hover{
+    color:blue;
+}
+
+.icon-instagram:hover{
+    color:lightblue;
+}
+
+.copyright-statement h2{
+    color:#687674;
+    font-size:80%;
+    text-align:center;
+    padding-bottom: 33px;
+}
+
+
+
+
+/*
+class="icon-facebook"
+    class="icon-google-plus"
+    class="icon-linkedin"
+class="icon-instagram"
+*/
