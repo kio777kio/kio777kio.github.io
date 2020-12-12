@@ -29,14 +29,15 @@ font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
-    width:100vw;
+    width:100%;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color: #015051;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 /*  Background Images============================
@@ -56,7 +57,10 @@ body {
     background-image: url(images/watersand2.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
+    min-width:720px; 
+    /* This min width setting got rid of a weird margin I had at the right on iphone and other smaller screens.  Something to do with pixels and %ages being mixed together within the code that raises an inconsistency*/
+
 }
 
 /*===========================================*/
@@ -603,8 +607,8 @@ BEGIN BASIC BCD INFO SECTION ======================================
 .cbdgummies {
     margin-top:20px;
     margin-bottom:30px;
-    max-width:700px;
-    max-height:200px;
+    width:700px;
+    height:200px;
     border-radius: 10px;
     box-shadow: 0px 20px 100px 30px rgba(0, 0, 0, 0.3);
     /* box-shsadow: offset-x, offset-y, blur-radius, spread-radius and color. */
@@ -719,8 +723,8 @@ BEGIN BASIC BCD INFO SECTION ======================================
 .cbdrecovery {
     margin-top:50px;
     margin-bottom: 50px;
-    max-width: 700px;
-    max-height:200px;
+    width: 700px;
+    height:200px;
     border-radius: 10px;
     box-shadow: 0px 20px 100px 30px rgba(0, 0, 0, 0.3);
     /* box-shsadow: offset-x, offset-y, blur-radius, spread-radius and color. */
@@ -975,6 +979,7 @@ FOOTER STYLING STARTS HERE==============================
 ===============================================*/
 footer {
     width:100vw;
+    min-width:720px;
     background:linear-gradient(rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.653));
     font-family:'M PLUS Rounded 1c', sans-serif;
 }
