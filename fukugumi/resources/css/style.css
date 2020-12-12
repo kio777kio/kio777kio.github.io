@@ -48,8 +48,9 @@ header {
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-    height: 800px;
-    width: 100%;
+    height:100vh;
+    width:100vw;
+    min-width:720px;
 
 }
 
@@ -465,6 +466,10 @@ BEGIN BASIC BCD INFO SECTION ======================================
     border-bottom: 1px solid #015051;
 }
 
+.cbd-products span {
+    font-size:70%;
+}
+
 .all-products-container {
     display:flex;
     flex-direction: column;
@@ -747,12 +752,12 @@ BEGIN BASIC BCD INFO SECTION ======================================
 }
 
 .cbdrecovery__content {
-    flex: 1;
+    flex:1;
     background-color: rgb(240, 248, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:10px;
 }
 
 .cbdrecovery__title {
@@ -760,10 +765,18 @@ BEGIN BASIC BCD INFO SECTION ======================================
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin:0;
+    padding:0;
 }
 
-.cbdrecovery__title h1 {
-    font-size: 90%;
+.cbdrecovery__title h2 {
+    font-size: 85%;
+    text-align: center;
+    text-shadow:none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+border:none;
 }
 
 .cbdrecovery__tag {
@@ -793,7 +806,7 @@ BEGIN BASIC BCD INFO SECTION ======================================
 .cbdrecovery__description p {
     font-size: 80%;
     margin:0;
-}
+} 
 
 .cbdrecovery__details {
     margin-top: -15px;
@@ -940,7 +953,8 @@ textarea {
 }
 
 input[type=textarea]{
-    height:100px;
+    height:150px;
+    width:200px;
 }
 
 input[type=checkbox] {
