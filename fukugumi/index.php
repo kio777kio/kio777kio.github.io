@@ -269,7 +269,6 @@ This section has links at the top of the 4 basic-info columns, which will eventu
     </section>
 
     <section class="info-form" id="form">
-        
         <div class="row form-title">
             <h2>Please give us feedback</h2>
             <h4>もっといい会社になるために皆様の声をお聞かせください</h4>
@@ -277,6 +276,21 @@ This section has links at the top of the 4 basic-info columns, which will eventu
 
     <div class="row big-box-form"> <!-- action sends to a URL. method specifies http data to use when sending form data.  -->
         <form action="#" method="post" class="full-form">
+            <div class="row">
+                
+                <?php
+                    if($_GET['success'] == 1) {
+                    echo "<div class=\"form-messages success\"Thank You! Your message has been sent</div>";
+                }
+
+                    if($_GET['success'] == -1) {
+                    echo "<div class=\"form-messages error\">Oops! Soemthing went wrong. Please try again</div>";
+                }
+                ?>
+
+            </div>
+
+         <div class="row">
 
         <div class="row form-item">
             <div class="col span-1-of-3 form-left-side">
