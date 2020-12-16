@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> <!--This is the animation link for css effects...-->
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css"> <!-- This one for responsive design-->
     <link
         href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Quicksand:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -277,17 +277,13 @@ This section has links at the top of the 4 basic-info columns, which will eventu
     <div class="row big-box-form"> <!-- action sends to a URL. method specifies http data to use when sending form data.  -->
         <form action="#" method="post" class="full-form">
             <div class="row">
-                
-                <?php
-                    if($_GET['success'] == 1) {
-                    echo "<div class=\"form-messages success\"Thank You! Your message has been sent</div>";
-                }
-
-                    if($_GET['success'] == -1) {
-                    echo "<div class=\"form-messages error\">Oops! Soemthing went wrong. Please try again</div>";
-                }
-                ?>
-
+                <div class="form-messages success">
+                Thank You!  Your message has been sent.
+            </div>
+            
+                <!-- <div class="form-messages error">
+                Oops! Soemthing went wrong.  Please try again.
+            </div> -->
             </div>
 
          <div class="row">
