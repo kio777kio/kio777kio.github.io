@@ -1,0 +1,84 @@
+/* queries.css file for media queries, needed to adjust styling to suit various screensizes. 
+
+general screen cutoffs:
+
+0px
+480px - iphone
+768px - tablet - portrait
+1024px - tablet - landscape
+1200px
+
+
+Within the media queries, all styles can be changed.  Basically, shrink the screen with the website up, identify problems, copy/past the styling from style.css and edit in the below. 
+*/
+
+/* screens up to 1200px*/
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+/* for landscape view on tablets and smaller pc screens and tablets 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    .fukugumi-title {
+        font-size:80%;
+        position:relative;
+        top:50px;
+    }
+    .main-container {
+        position:relative;
+        right:20px;
+        transform:scale(0.7)    ;
+        -webkit-transform:scale(0.7)    ;
+        -moz-transform:scale(0.7)    ;
+        -ms-transform:scale(0.7)    ;
+        -o-transform:scale(0.7)    ;
+}
+
+}
+
+/* for larger phones and tablets 480 to 767px */
+@media only screen and (max-width: 767px) {
+    .fukugumi-title h1 {
+        font-size:200%;
+        margin:20px auto 50px auto;
+    }
+
+    .main-container {
+        position:relative;
+        bottom:70px;
+        transform:scale(0.6)    ;
+        -webkit-transform:scale(0.6)    ;
+        -moz-transform:scale(0.6)    ;
+        -ms-transform:scale(0.6)    ;
+        -o-transform:scale(0.6)    ;
+}
+
+}
+
+@media only screen and (max-width: 620px) {
+    .main-container {
+        position:relative;
+        right:80px;
+    }
+}
+
+/* for larger phones and tablets 480px */
+@media only screen and (max-width: 480px) {
+    .main-container {
+        transform:scale(.5)    ;
+        -webkit-transform:scale(.5)    ;
+        -moz-transform:scale(.5)    ;
+        -ms-transform:scale(.5)    ;
+        -o-transform:scale(.5)    ;
+}
+}
+/* small screens to 380px */
+@media only screen and (max-width: 380px) {
+
+    .main-container {
+        position:relative;
+        right:150px;
+    }
+}
