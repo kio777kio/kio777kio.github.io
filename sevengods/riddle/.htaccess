@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Your Answers"
+AuthUserFile/Users/kio777/Desktop/Web Ninja/七福神の謎/.htpasswd
+require valid-user
