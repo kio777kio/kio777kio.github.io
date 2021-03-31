@@ -36,10 +36,15 @@
       type="text/css"
       href="resources/vendorCSS/custom.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script
       type="text/javascript"
       src="resources/vendorJS/modernizr.custom.79639.js"
     ></script>
+    
     <noscript>
       <link
         rel="stylesheet"
@@ -53,10 +58,14 @@
     <header>
       <div class="header-fukugumi-shop">
         <a href="#" class="logo-shop"
-          ><img
+          ><img class="logo-black"
             src="resources/images/fukuGumiLogoblackMini.png"
             alt="logoBlack"
+        /><img class="logo-white hidden"
+            src="resources/images/fukuGumiLogoWhite.png"
+            alt="logowhite"
         /></a>
+        
         <a href="#"><h3 class="fukugumi">FukuGumi</h3></a>
         <i class="icon-align-justify"></i>
       </div>
@@ -112,7 +121,7 @@
       </div>
     </section>
 
-    <section class="section-value-prop">
+    <section class="section-value-prop js-section-value-prop">
       <div class="banner">
         <div class="value-prop-box">
           <h2>近代社会での幸福論</h2>
@@ -124,7 +133,7 @@
           </p>
         </div>
 
-        <div class="banner-clouds">
+        <div class="banner-clouds js-banner-clouds">
           <img
             src="resources/images/wholeClouds/wholeCloud1.png"
             alt="cloud1"
@@ -154,7 +163,18 @@
       </div>
     </section>
 
-    <section class="section-products">
+    <section class="cool-calm-collected js-cool-calm-collected">
+      <div class="cool-calm-collected-box">
+
+        <h3 class="cool-calm-collected hidden ccc-line1">
+          ストレスを払いのけて</h3>
+        <h3 class="cool-calm-collected hidden ccc-line2">悠々閑々</h3>
+        <h3 class="cool-calm-collected hidden ccc-line3">本当に大切なものに集中する</h3>
+        
+        
+      </div>
+    </section>
+    <section class="section-products js-section-products">
       <div class="container demo-1">
         <div id="slider" class="sl-slider-wrapper">
           <div class="sl-slider">
@@ -283,80 +303,27 @@
       </div>
     </section>
 
-
+<!-- 
     <script
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="resources/vendorJS/jquery.ba-cond.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="resources/vendorJS/jquery.slitslider.js"
-    ></script>
-    <script type="text/javascript">
-      $(function () {
-        var Page = (function () {
-          var $navArrows = $("#nav-arrows"),
-            $nav = $("#nav-dots > span"),
-            slitslider = $("#slider").slitslider({
-              onBeforeChange: function (slide, pos) {
-                $nav.removeClass("nav-dot-current");
-                $nav.eq(pos).addClass("nav-dot-current");
-              },
-            }),
-            init = function () {
-              initEvents();
-            },
-            initEvents = function () {
-              // add navigation events
-              $navArrows.children(":last").on("click", function () {
-                slitslider.next();
-                return false;
-              });
-
-              $navArrows.children(":first").on("click", function () {
-                slitslider.previous();
-                return false;
-              });
-
-              $nav.each(function (i) {
-                $(this).on("click", function (event) {
-                  var $dot = $(this);
-
-                  if (!slitslider.isActive()) {
-                    $nav.removeClass("nav-dot-current");
-                    $dot.addClass("nav-dot-current");
-                  }
-
-                  slitslider.jump(i + 1);
-                  return false;
-                });
-              });
-            };
-
-          return { init: init };
-        })();
-
-        Page.init();
-
-        /**
-         * Notes:
-         *
-         * example how to add items:
-         */
-
-        /*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-      });
-    </script>
+    ></script> -->
+  <!--JQUERY HERE-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--waypoints HERE-->
+  <script src="resources/vendorJS/jquery.waypoints.min.js"></script>
+  
+  <script
+  type="text/javascript"
+  src="resources/vendorJS/jquery.ba-cond.min.js"
+  ></script>
+  <script
+  type="text/javascript"
+  src="resources/vendorJS/jquery.slitslider.js"
+  ></script>
+  <script type="text/javascript" src="resources/vendorJS/arrows.js"></script>
+  <script type="text/javascript" src="/resources/js/script.js"></script>
+ 
+    
   </body>
 </html>

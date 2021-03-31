@@ -6,10 +6,16 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 
 /*color themes
 --dark-purple: #240115;
---tiffany-blue: #0abab5;
+--lighter blue: #83e8e5
 --bright-yellow-crayola: #fbb13c;
 --light-coral: #ef767a;
 --queen-blue: #456990;
+*/
+
+/*
+CSS ANIMATIONS SYNTAX
+<h1 class="animate__animated animate__bounce">An animated element</h1>
+examples of 
 */
 
 * {
@@ -31,8 +37,22 @@ header {
   position: fixed;
   height: 120px;
   width: 100vw;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), #0abab5);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #83e8e5);
   z-index: 10;
+}
+/*Waypoints addClass to lighten */
+.header-light {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.68),
+    #fff
+  );
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 /*==== LEFT SIDE OF HEADER ==========================*/
@@ -75,6 +95,12 @@ header a {
   height: 50px;
 }
 
+.logo-shop-white img {
+  padding-top: 20px;
+  width: 7vw;
+  margin-right: 20px;
+}
+
 .logo-shop-text {
   margin-top: 40px;
   font-weight: 400;
@@ -109,8 +135,8 @@ header a {
 /*=== Section 1 - Top Intro class="top-intro"==========================*/
 
 .top-intro {
-  background: linear-gradient(to bottom, #f2b7c65e 80%, #0abab5),
-    url(/resources/images/tiffanyback.jpg);
+  background: linear-gradient(to bottom, #f2b7c65e 80%, #83e8e5),
+    url(/resources/images/tiffanyback.png);
   background-size: auto;
   width: 100vw;
   height: 100vh;
@@ -215,7 +241,7 @@ header a {
 
 .intro-shop-btn:hover,
 .intro-shop-btn:active {
-  color: #0abab5;
+  color: #83e8e5;
 }
 
 .main-intro-image {
@@ -291,7 +317,7 @@ header a {
   padding-bottom: 100px;
   width: 100vw;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #0abab5, #ef767a);
+  background: linear-gradient(to bottom, #83e8e5, #ef767a);
   background-size: cover;
 }
 
@@ -348,7 +374,7 @@ https://jimiwikman.se/video/view/330-css3-cloud-banner-animation-effects-pure-cs
 .banner .banner-clouds img {
   position: absolute;
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   bottom: 0;
   max-width: 100%;
 
@@ -360,11 +386,11 @@ https://jimiwikman.se/video/view/330-css3-cloud-banner-animation-effects-pure-cs
 
 @keyframes cloudBanner {
   0% {
-    transform: translateX(100%) translateY(0);
-    -webkit-transform: translateX(100%) translateY(0);
-    -moz-transform: translateX(100%) translateY(0);
-    -ms-transform: translateX(100%) translateY(0);
-    -o-transform: translateX(100%) translateY(0);
+    transform: translateX(-75%) translateY(0);
+    -webkit-transform: translateX(-75%) translateY(0);
+    -moz-transform: translateX(-75%) translateY(0);
+    -ms-transform: translateX(-75%) translateY(0);
+    -o-transform: translateX(-75%) translateY(0);
   }
   50% {
     transform: translateY(20%);
@@ -374,15 +400,57 @@ https://jimiwikman.se/video/view/330-css3-cloud-banner-animation-effects-pure-cs
     -o-transform: translateY(20%);
   }
   100% {
-    transform: translateX(-100%) translateY(0);
-    -webkit-transform: translateX(-100%) translateY(0);
-    -moz-transform: translateX(-100%) translateY(0);
-    -ms-transform: translateX(-100%) translateY(0);
-    -o-transform: translateX(-100%) translateY(0);
+    transform: translateX(100%) translateY(0);
+    -webkit-transform: translateX(100%) translateY(0);
+    -moz-transform: translateX(100%) translateY(0);
+    -ms-transform: translateX(100%) translateY(0);
+    -o-transform: translateX(100%) translateY(0);
   }
 }
 
-/*SECTION 3 PRODUCTS============================================
+/*SECTION 3 Slogan(?)============================================
+===========================================================*/
+.cool-calm-collected {
+  background-color: #ef767a;
+  background-size: cover;
+}
+.cool-calm-collected-box {
+  width: 90vw;
+  display: block;
+  text-align: center;
+}
+
+.cool-calm-collected {
+  font-size: 5vw;
+  color: #83e8e5;
+  text-shadow: 1px 1px 3px #240115;
+  line-height: 1.5;
+  background-color: none;
+}
+
+.ccc-line1 {
+  z-index: -1;
+}
+
+.ccc-line2 {
+  font-size: 8vw;
+  font-style: italic;
+  padding-left: 12vw;
+  background-color: none;
+  z-index: -2;
+}
+
+.ccc-line1.animate__animated.animate__fadeInDown {
+  --animate-duration: 3.5s;
+}
+.ccc-line2.animate__animated.animate__fadeInBottomLeft {
+  --animate-duration: 4s;
+}
+.ccc-line3.animate__animated.animate__fadeInDown {
+  --animate-duration: 4s;
+}
+
+/*SECTION ４ PRODUCTS============================================
 ===========================================================*/
 
 .section-products {

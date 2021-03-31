@@ -1,6 +1,6 @@
 /*color themes
 --dark-purple: #240115;
---tiffany-blue: #0abab5;
+--tiffany-blue: #83e8e5;
 --bright-yellow-crayola: #fbb13c;
 --light-coral: #ef767a;
 --queen-blue: #456990;
@@ -111,7 +111,7 @@
 .deco {
   width: 25vw;
   height: 25vw;
-  border: 2px dashed #0abab5;
+  border: 2px dashed #83e8e5;
   border-radius: 50%;
   position: absolute;
   bottom: 45%;
@@ -138,7 +138,7 @@
 }
 
 .sl-slide h2 {
-  color: #0abab5;
+  color: #83e8e5;
   text-shadow: 1px 1px 5px #ef767a;
   padding: 20px;
   position: absolute;
@@ -206,7 +206,8 @@
 /* First Slide */
 .bg-1 .sl-slide-inner,
 .bg-1 .sl-content-slice {
-  background-image: url(/resources/images/gummies/gummies2.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #ef767a),
+    url(/resources/images/gummies/gummies2.png);
   background-size: cover;
 }
 
@@ -272,7 +273,7 @@
 
 .bg-4 h2,
 .bg-4 blockquote {
-  color: #0abab5;
+  color: #83e8e5;
   text-shadow: 1px 1px 5px #fff;
 }
 
@@ -283,7 +284,7 @@
 /* Fifth Slide */
 .bg-5 .sl-slide-inner,
 .bg-5 .sl-content-slice {
-  background: linear-gradient(to bottom, #0abab5, #240115, #0abab5);
+  background: linear-gradient(to bottom, #83e8e5, #240115, #83e8e5);
 }
 .bg-5 .deco {
   border-color: #ecd82c;
